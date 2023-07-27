@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    int s1,s3;
+    long long int s2;
+    
+    scanf("%d %d",&a,&b);
+    
+    s1=a+b;
+    s2=(long long int)a*b; ------------------------(im)
+    s3=a-b;
+    
+    printf("%d + %d = %d\n",a,b,s1);
+    printf("%d * %d = %lld\n",a,b,s2);
+    printf("%d - %d = %d\n",a,b,s3);
+    
+    return 0;
+    
+}
