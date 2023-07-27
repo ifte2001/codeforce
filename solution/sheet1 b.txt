@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+    int num;
+    long long int m;
+    float f;
+    double d;
+
+    scanf("%d %lld %c %f %lf",&num,&m,&ch,&f,&d);
+
+    printf("%d\n",num);
+    printf("%lld\n",m);
+    printf("%c\n",ch);
+    printf("%.2f\n",f);
+    printf("%.1lf\n",d);
+
+    return 0;
+}
