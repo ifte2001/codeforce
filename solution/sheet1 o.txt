@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main()
+{
+    int a,b,s;
+    char ch;
+
+    scanf("%d %c %d",&a,&ch,&b);
+
+    if(ch=='+')
+        s = a+b;
+    else if(ch=='-')
+        s = a-b;
+    else if(ch=='*')
+        s = a*b;
+    else if(ch=='/')
+        s = a/b;
+
+    printf("%d\n",s);
+
+    return 0;
+}

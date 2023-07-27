@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main()
+{
+    int a,f;
+    
+    scanf("%d",&a);
+    
+    f = a/1000;
+    
+    if(f%2==0)
+        printf("EVEN\n");
+    if(f%2!=0)
+        printf("ODD\n");
+
+    return 0;
+}
