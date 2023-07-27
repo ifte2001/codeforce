@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,s=0,sum;
+    char x,y;
+
+    scanf("%d %c %d %c %d",&a,&x,&b,&y,&sum);
+
+    if(x=='+')
+    {
+        if((a+b)==sum)
+            s+=1;
+
+        if(s==0)
+            printf("%d\n",a+b);
+        else
+            printf("Yes\n");
+    }
+    else if(x=='-')
+    {
+        if((a-b)==sum)
+            s+=1;
+
+        if(s==0)
+            printf("%d\n",a-b);
+        else
+            printf("Yes\n");
+    }
+    else if(x=='*')
+    {
+        if((a*b)==sum)
+            s+=1;
+
+        if(s==0)
+            printf("%d\n",a*b);
+        else
+            printf("Yes\n");
+    }
+
+    return 0;
+}
