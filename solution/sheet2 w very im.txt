@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+    int n,a,b,j,k,i;
+
+    scanf("%d",&n);
+
+
+    for(i=1;i<=n;i+=1)
+    {
+      for(j=n-i;j>=1;j-=1)
+      {
+        printf(" ");
+      }
+
+      int x = i*2;
+      for(k=1;k<=x-1;k+=1)
+      {
+        printf("*");
+      }
+      printf("\n");
+    }
+
+    for(i=n;i>=1;i-=1)
+    {
+      for(j=1;j<=n-i;j+=1)
+      {
+        printf(" ");
+      }
+
+      int x = i*2;
+      for(k=1;k<=x-1;k+=1)
+      {
+        printf("*");
+      }
+      printf("\n");
+    }
+
+    return 0;
+}

@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    long long int n,i,x,a,sum=0;
+
+    scanf("%lld %lld",&a,&n);
+
+    for(i=2;i<=n;i+=1)
+    {
+        if(i%2==0)
+        {
+            x = pow(a,i);
+            sum = sum + x;
+        }
+    }
+    printf("%lld\n",sum);
+
+    return 0;
+}
+

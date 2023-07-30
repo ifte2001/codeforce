@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    double s,a,b;
+    int x,y,z;
+    scanf("%lf %lf",&a,&b);
+
+    s = a/b;
+
+    x = floor(s);
+    y = ceil(s);
+    z = round(s);
+
+    printf("floor %.lf / %.lf = %d\n",a,b,x);
+    printf("ceil %.lf / %.lf = %d\n",a,b,y);
+    printf("round %.lf / %.lf = %d\n",a,b,z);
+
+    return 0;
+}
