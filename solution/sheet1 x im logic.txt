@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int s1,e1,s2,e2,x,y;
+    scanf("%d %d %d %d",&s1,&e1,&s2,&e2);
+
+    x = s1>s2 ? s1:s2;
+    y = e1<e2 ? e1:e2;
+    
+    if(x>y)
+        printf("-1\n");
+    else
+        printf("%d %d\n",x,y);
+
+    return 0;
+}
