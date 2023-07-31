@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,sum=0,l,a;
+    
+    scanf("%d",&a);
+    
+    n = a;
+    
+    while(1)
+    {
+      l = n%10;
+      n = n/10;
+      sum = sum + l;
+      if(n==0)
+          break;
+      sum = sum * 10;
+      
+    }
+    printf("%d\n",sum);
+    
+    if(sum==a)
+       printf("YES\n");
+    else
+       printf("NO\n");
+    
+    return 0;
+}
