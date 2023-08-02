@@ -1,0 +1,33 @@
+    #include <stdio.h>
+     
+    int main()
+    {
+     
+        int a[100000];
+        int x,n,m;
+        int s=0;
+     
+        scanf("%d",&n);
+     
+        for(int i=0;i<n;i+=1)
+        {
+          scanf("%d ",&a[i]);
+        }
+     
+        scanf("%d",&m);
+     
+        for(int j=0;j<n;j+=1)
+        {
+          if(a[j]==m)
+          {
+            printf("%d\n",j);
+            s+=1;
+            break;
+          }
+        }
+     
+        if(s==0)
+          printf("-1\n");
+     
+        return 0;
+    }
