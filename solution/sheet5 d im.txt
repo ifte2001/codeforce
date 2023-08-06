@@ -1,0 +1,32 @@
+    #include<stdio.h>
+    #include<math.h>
+     
+        int main()
+     
+        {
+     
+            int n,s,a,x;
+     
+            scanf("%d",&n);
+     
+            for(int i=1;i<=n;i+=1)
+            {
+                scanf("%d",&x);
+                s = sqrt(x);
+                a=0;
+                for(int j=2;j<=s;j+=1)
+                {
+                    if(x%j==0)
+                    {
+                        a+=1;
+                    }
+                }
+                if(a>0 || x==1)
+                    printf("NO\n");
+                else if(a==0)
+                    printf("YES\n");
+     
+            }
+     
+            return 0;
+        }
