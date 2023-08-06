@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+int main()
+{
+    int r,c;
+    int flag=0;
+    int i,j,x;
+
+    scanf("%d %d",&r,&c);
+
+    int a[r][c];
+
+    for(i=0;i<r;i+=1)
+    {
+        for(j=0;j<c;j+=1)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+
+    scanf("%d",&x);
+
+    for(i=0;i<r;i+=1)
+    {
+        for(j=0;j<c;j+=1)
+        {
+            if(a[i][j]==x)
+            {
+                flag+=1;
+                break;
+            }
+        }
+    }
+    if(flag==0)
+        printf("will take number\n");
+    else if(flag!=0)
+        printf("will not take number\n");
+
+    return 0;
+}

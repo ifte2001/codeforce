@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+int main()
+
+{
+    int n,a[10000],j,box;
+
+    scanf("%d",&n);
+
+    for(int i=0;i<n;i+=1)
+    {
+      scanf("%d",&a[i]);
+    }
+
+    for(int i=0;i<n;i+=1)
+    {
+        for(j=i+1;j<n;j+=1)
+        {
+            if(a[i]>a[j])
+            {
+                box = a[i];
+                a[i] = a[j];
+                a[j] = box;
+            }
+        }
+    }
+    for(int i=0;i<n;i+=1)
+    {
+      printf("%d ",a[i]);
+    }
+
+
+    return 0;
+}
