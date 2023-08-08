@@ -1,0 +1,29 @@
+
+
+    #include<stdio.h>
+     
+    int main()
+     
+    {
+        int n,num,max,c;
+        scanf("%d",&c);
+     
+        for(int i=1;i<=c;i+=1)
+        {
+            scanf("%d",&n);
+            char a[n];
+     
+            scanf("%s",&a);
+     
+            max = 0;
+            for(int i=0;i<n;i+=1)
+            {
+                num = a[i];
+     
+                if(max<a[i])
+                    max = a[i];
+            }
+            printf("%d\n",max-96);
+        }
+        return 0;
+    }

@@ -1,0 +1,35 @@
+#include<stdio.h>
+
+int main()
+
+{
+    int c,ch,flag;
+    char a[11]="codeforces";
+    scanf("%d",&c);
+    char b[c+1];
+
+    for(int i=0;i<c;i+=1)
+    {
+        getchar();
+        scanf("%c",&b[i]);
+    }
+
+    for(int i=0;i<c;i+=1)
+    {
+        flag = 0;
+        for(int j=0;j<10;j+=1)
+        {
+            if(b[i]==a[j])
+            {
+                flag+=1;
+                break;
+            }
+        }
+        if(flag == 0)
+            printf("NO\n");
+        else if(flag == 1)
+            printf("YES\n");
+    }
+
+    return 0;
+}
