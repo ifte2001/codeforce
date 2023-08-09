@@ -1,0 +1,28 @@
+
+#include<stdio.h>
+
+int main()
+{
+    long long int c,n,a[10],x;
+    scanf("%d",&c);
+
+    for(int i=1;i<=c;i+=1)
+    {
+        for(int j=0;j<4;j+=1)
+        {
+            scanf("%d",&a[j]);
+        }
+
+        x = 0;
+        for(int j=0;j<4;j+=1)
+        {
+            if(a[0]<a[j])
+                x+=1;
+        }
+
+        printf("%d\n",x);
+    }
+
+    return 0;
+
+}

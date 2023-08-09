@@ -1,0 +1,26 @@
+
+#include<stdio.h>
+
+int main()
+{
+    long long int c,n,a[100000],j;
+    scanf("%d",&c);
+
+    for(int i=1;i<=c;i+=1)
+    {
+        for(j=0;j<3;j+=1)
+        {
+            scanf("%d",&a[j]);
+        }
+
+        j = 0;
+
+        if((a[j]==a[j+1]+a[j+2]) || (a[j+1]==a[j]+a[j+2]) || (a[j+2]==a[j]+a[j+1]))
+            printf("YES\n");
+        else
+            printf("NO\n");
+    }
+
+    return 0;
+
+}

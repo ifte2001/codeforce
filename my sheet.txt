@@ -1,25 +1,35 @@
 1st (date: 8/8/23)
 =============
 1(done).	2.94 https://codeforces.com/problemset/problem/1772/A
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/1.txt
 
 2(done).	3.077 https://codeforces.com/problemset/problem/1742/B
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/2.txt
 
 3.	3.57 https://codeforces.com/problemset/problem/1669/B
 s: 
 
 4(done).	3.643 https://codeforces.com/problemset/problem/1760/B
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/4.txt
 
 5.	3.8 https://codeforces.com/problemset/problem/1791/A
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/5.txt
 
 6.	3.941 https://codeforces.com/problemset/problem/1676/B
+s: 
+
 7.	4.084 https://codeforces.com/problemset/problem/1742/A
+s: 
+
 8.	4.262 https://codeforces.com/problemset/problem/1692/A
+s: 
+
 9.	4.298 https://codeforces.com/problemset/problem/1760/A
+s: 
+
 10.	4.653 https://codeforces.com/problemset/problem/1791/B
+s: 
+
 11.	4.947 https://codeforces.com/problemset/problem/1837/A
 12.	4.97 https://codeforces.com/problemset/problem/1703/B
 13.	5.069 https://codeforces.com/problemset/problem/1676/A

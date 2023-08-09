@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+
+{
+    int x,y;
+    char a[1001],b[1001];
+
+    scanf("%s",&a);
+    getchar();
+    scanf("%s",&b);
+
+    x = strlen(a);
+    y = strlen(b);
+
+    printf("%d %d\n",x,y);
+    printf("%s %s",a,b);
+
+    return 0;
+}
+

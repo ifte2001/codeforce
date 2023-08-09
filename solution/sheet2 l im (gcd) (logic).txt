@@ -1,3 +1,5 @@
+code: 1 (it will take 16sec)
+=====================
 #include<stdio.h>
 
 int main()
@@ -24,3 +26,43 @@ int main()
 
     return 0;
 }
+
+
+
+
+(I RECOMMEND YOU TO USE CODE: 2)
+
+code:  2 (it will take 3sec)
+=====================
+
+#include<stdio.h>
+int main()
+{
+    int a,b,extra,GSD,LCM,n1,n2;
+    printf("enter 2 numbers: ");
+    scanf("%d %d",&a,&b);
+
+    n1=a;
+    n2=b;
+
+    while(b!=0)
+    {
+        extra=a%b;
+        a=b;
+        b=extra;
+    }
+    GSD=a;
+
+    printf("GSD : %d\n",GSD);
+
+}
+
+
+
+
+
+NOTE: 
+code: 2 te time kom lage....
+
+GCD = গ সা গু 
+LCM = ল সা গু 
