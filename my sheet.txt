@@ -12,28 +12,38 @@ s:
 4(done).	3.643 https://codeforces.com/problemset/problem/1760/B
 s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/4.txt
 
-5.	3.8 https://codeforces.com/problemset/problem/1791/A
+5(done).	3.8 https://codeforces.com/problemset/problem/1791/A
 s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/5.txt
 
-6.	3.941 https://codeforces.com/problemset/problem/1676/B
-s: 
+6(done).	3.941 https://codeforces.com/problemset/problem/1676/B
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/6.txt
 
-7.	4.084 https://codeforces.com/problemset/problem/1742/A
-s: 
+7(done).	4.084 https://codeforces.com/problemset/problem/1742/A
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/7.txt
 
-8.	4.262 https://codeforces.com/problemset/problem/1692/A
-s: 
+8(done).	4.262 https://codeforces.com/problemset/problem/1692/A
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/8.txt
 
-9.	4.298 https://codeforces.com/problemset/problem/1760/A
-s: 
+9(done).	4.298 https://codeforces.com/problemset/problem/1760/A
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/9.txt
 
-10.	4.653 https://codeforces.com/problemset/problem/1791/B
-s: 
+10(done).	4.653 https://codeforces.com/problemset/problem/1791/B
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/10%20im.txt
 
 11.	4.947 https://codeforces.com/problemset/problem/1837/A
+প্রশ্ন না বোঝলে এটা দেখ: https://youtu.be/SdwmwKN14lw
+s: 
+
 12.	4.97 https://codeforces.com/problemset/problem/1703/B
+প্রশ্ন না বোঝলে এটা দেখ: https://youtu.be/V8FMryBocHQ
+s: 
+
 13.	5.069 https://codeforces.com/problemset/problem/1676/A
+s: 
+
 14.	5.301 https://codeforces.com/problemset/problem/1758/A
+s: 
+
 15.	5.564 https://codeforces.com/problemset/problem/1791/C
 16.	5.836 https://codeforces.com/problemset/problem/1669/A
 17.	5.858 https://codeforces.com/problemset/problem/1768/A

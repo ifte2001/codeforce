@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+  int c;
+  char ch[101],ch1[101];
+
+  scanf("%d",&c);
+
+  for(int i=1;i<=c;i+=1)
+  {
+      scanf("%s",&ch);
+      getchar();
+
+      strcpy(ch1,ch);   //it will copy ch and paste it in ch1
+
+      strrev(ch1);       //it will reverse the ch1
+
+      strcat(ch,ch1);   //it will add ch1 with ch...
+
+      printf("%s\n",ch);
+  }
+  return 0;
+}
