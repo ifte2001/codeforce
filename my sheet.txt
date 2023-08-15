@@ -32,24 +32,36 @@ s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/10%20im.txt
 
 11.	4.947 https://codeforces.com/problemset/problem/1837/A
 প্রশ্ন না বোঝলে এটা দেখ: https://youtu.be/SdwmwKN14lw
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/11.txt
 
 12.	4.97 https://codeforces.com/problemset/problem/1703/B
 প্রশ্ন না বোঝলে এটা দেখ: https://youtu.be/V8FMryBocHQ
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/12%20im.txt
 
 13.	5.069 https://codeforces.com/problemset/problem/1676/A
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/13%20im.txt
 
 14.	5.301 https://codeforces.com/problemset/problem/1758/A
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/14%20im.txt
 
 15.	5.564 https://codeforces.com/problemset/problem/1791/C
+s:
+
 16.	5.836 https://codeforces.com/problemset/problem/1669/A
+s: 
+
 17.	5.858 https://codeforces.com/problemset/problem/1768/A
+s: 
+
 18.	5.891 https://codeforces.com/problemset/problem/1790/A
+s: 
+
 19.	5.942 https://codeforces.com/problemset/problem/1748/A
+s: 
+
 20.	6.023 https://codeforces.com/problemset/problem/1831/A
+s: problem...
+
 21.	6.188 https://codeforces.com/problemset/problem/1760/C
 22.	6.246 https://codeforces.com/problemset/problem/1703/A
 23.	6.564 https://codeforces.com/problemset/problem/1740/A
