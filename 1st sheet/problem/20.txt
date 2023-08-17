@@ -1,0 +1,75 @@
+#include<stdio.h>
+
+int main()
+
+{
+    int sum1,sum2,i,j,c,n,x,flag;
+    int a[1000],b[1000];
+    scanf("%d",&c);
+
+    for(int k=1;k<=c;k+=1)
+    {
+        scanf("%d",&n);
+
+        for(i=0;i<n;i+=1)
+        {
+            scanf("%d",&a[i]);
+        }
+
+        for(i=0 ; i<n ; i+=1)
+        {
+            if(n==1)
+            {
+                printf("%d\n",1);
+                break;
+            }
+            for(j=2;j<=n;j+=1)
+            {
+                flag = 0;
+                if(i==0)           //it will store one element for first index...
+                {
+                    b[0]=1;
+                    break;
+                }
+
+                sum1 = a[i-1] + b[i-1];
+                sum2 = a[i] + j;
+
+                if(sum1<=sum2)        // if the number obey this condition then... the number will store in b[i]...
+                {
+                    flag=2;
+                }
+
+                if(flag == 2)
+                {
+                    for(int m=0;m<i;m+=1)  // this loop will check the same element in array...
+                    {
+                        if(b[m]==j)
+                        {
+                            flag=5;
+                            break;
+                        }
+                        else
+                        {
+                            flag=2;
+                        }
+                    }
+                }
+                if(flag==2)
+                {
+                    b[i]=j;
+                    break;
+                }
+             }
+        }
+        if(n!=1)
+        {
+            for(int p=0;p<n;p+=1)
+            {
+                printf("%d ",b[p]);
+            }
+            printf("\n");
+        }
+    }
+    return 0;
+}

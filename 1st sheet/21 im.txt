@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main()
+{
+  long long int c,n,box,i,j,k,max,max2;
+
+  scanf("%lld",&c);
+
+  for(k=0;k<c;k+=1)  ///take the test case number
+  {
+      scanf("%lld",&n);  ///take the array size
+
+      long long int a[n+1],b[n+1];    ///trick for array size
+
+      for(j=0;j<n;j+=1)  ///take the array element from user
+      {
+        scanf("%lld",&a[j]);
+        b[j]=a[j];
+      }
+
+      for(i=0;i<n;i+=1)  ///sort array
+      {
+         for(j=i+1;j<n;j+=1)
+         {
+            if(a[i]<a[j])
+            {
+              box = a[j];
+              a[j] = a[i];
+              a[i] = box;
+            }
+         }
+         if(i==1)
+            break;
+      }
+      max = a[0];  ///find out the max value
+      max2= a[1];  ///find out the 2nd max value
+
+
+      for(j=0;j<n;j+=1)  ///work for the output...
+      {
+        if(b[j]<max)
+          printf("%lld ",b[j]-max);
+        else if(b[j]==max)
+          printf("%lld ",max-max2);
+      }
+      printf("\n");
+  }
+  return 0;
+}

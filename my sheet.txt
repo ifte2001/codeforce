@@ -63,6 +63,8 @@ s:
 s: problem...
 
 21.	6.188 https://codeforces.com/problemset/problem/1760/C
+s: 
+
 22.	6.246 https://codeforces.com/problemset/problem/1703/A
 23.	6.564 https://codeforces.com/problemset/problem/1740/A
 24.	6.577 https://codeforces.com/problemset/problem/1743/B
