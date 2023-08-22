@@ -1,0 +1,101 @@
+#include <stdio.h>
+
+int main()
+{
+  int c,n,x,x1,x2,e,flag,box;
+///note: take the text case number
+  scanf("%d",&c);
+///note: loop for c time
+  for(int i=1;i<=c;i++)
+  {
+      scanf("%d",&n);
+///note: trick to set array size
+      int a[n];
+
+      for(int j=0;j<n;j+=1)
+      {
+          scanf("%d",&a[j]);
+      }
+///note: sort array
+      for(int j=0;j<n;j+=1)
+      {
+          for(int k=j+1;k<n;k+=1)
+          {
+              if(a[j]>a[k])
+              {
+                  box = a[k];
+                  a[k] = a[j];
+                  a[j] = box;
+              }
+          }
+      }
+
+
+/*note: there will be two condition...
+case alpa: we will kill each monster by a cast...which cast number will x2...
+case 0: if all element of a array are equal then the array size will be the number of cast...
+    - there is a hidden case in case0 ... if the elements of array is 1... such as,[1 , 1 , 1]so we use a[0]!=1
+case 1: if 2 element of array is equal then decrease one...until the monster die...
+    - there is a hidden case ... we should use case1 if both elements are 1... otherwise we can't get minimum cast number...
+case 2: if two element of array is not equral then kill the monster in one time...
+*/
+      e=0;
+      for(int j=0;j<n;j+=1)   /// note: work for case0...
+      {
+        if(a[0]==a[j] && a[0]!=1)
+            e+=1;
+      }
+      if(e==n)                /// note: e==n means all the elements are equal...
+      {
+          printf("%d\n",n);
+          continue;
+      }
+
+
+      ///note: "x1" is the number of cast to kill all the monster
+      x1 = 0;
+
+      for(int j=0;j<n;j+=1)   /// note: work for case1...
+      {
+          if(a[j]==0)     ///note: we don't need to work for the dead monsters...a[j] means the monster is dead...
+            continue;
+
+
+          flag=0;
+          for(int k=j+1;k<n;k+=1)
+          {
+              if(a[k] == a[j] && a[k]==1)
+              {
+                  while(1)
+                  {
+                      a[k]-=1;         ///note: decreasing one
+                      x1+=1;            ///note: count the cast
+                      if(a[k]==0)
+                      {
+                          a[j] = 0;   ///note: make the other one 0... which was equal to a[k]
+                          flag = 1;   ///note: flag=1 means case2 will not work this time
+                          break;
+                      }
+                  }
+              }
+          }
+
+          /// note: work for case0...
+          if(flag==0)     ///note: flag=0 means case1 did not work
+          {
+            a[j]=0;       ///note: according to case2 we have kill monster in a one cast
+            x1+=1;         ///note: count the cast
+          }
+      }
+
+      ///case alfa:
+      x2 = n;
+      
+      ///note: it will check what is the minimum cast number...
+      x = x1<x2 ? x1 : x2; 
+
+      printf("%d\n",x);
+  }
+
+  return 0;
+}

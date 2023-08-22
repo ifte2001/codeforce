@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+  
+  int c;
+  
+  char a[150],b[10]="YES";
+  scanf("%d",&c);
+  for(int i=1;i<=c;i++)
+  {
+    scanf("%s",&a);
+    
+    
+    strupr(a);
+    
+    int x=strcmp(a,b);
+    
+    if(x==0)
+       printf("YES\n");
+    else
+       printf("NO\n");
+  }
+  
+  return 0;
+}
