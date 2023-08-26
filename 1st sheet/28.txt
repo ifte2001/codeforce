@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    int c,n,x;
+
+    scanf("%d",&c);  ///take test case number
+
+    for(int k=0;k<c;k+=1)
+    {
+        scanf("%d",&n);  ///take the size of array
+
+        int a[n+1];  ///set the size of array
+
+        int sum = 0;  ///sum is 0
+        for(int i=n-1;i>=0;i-=1)  ///we have to start this ... higher to lower... because at last we have to work for a[0] 
+        {
+            a[i] = i+1;  ///we have to add one with "i" because array start from 0 index
+
+            if(i==0)  ///if i = 0 then we will work with 1 ...because 1 divisible with all numbers...
+            {
+                x=0;  ///x=0
+                while(1)
+                {
+                    x+=1;  ///we will add 1 with x until condition is true
+                    if(x%1==0 && (sum+x)%n==0)  ///condition (1) x will be divisible by 1 (2) the sum of the array is divisible by n...
+                    {
+                        a[0]=x;  ///if the condition is true ... then set the value of x in a[0]
+                        break;
+                    }
+                }
+            }
+
+            sum = sum + a[i];  /// it will find out the sum for condition (2) ... until the i=0
+        }
+
+        for(int i=0;i<n;i++)
+            printf("%d ",a[i]);
+
+        printf("\n");
+    }
+}

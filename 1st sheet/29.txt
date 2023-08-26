@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,c,a,b,x,y;
+    /// a = it a number which determine how many b we should multiply with x ... to get y 
+    /// b = the value which we have to multiply with x ... to get y
+
+    scanf("%d",&c);
+
+    for(int k=0;k<c;k++)
+    {
+        scanf("%d %d",&x,&y);
+
+        if(y%x==0)    /// if y is divisible by x
+        {
+            a = 1;
+            b  = y / x;
+            printf("%d %d\n",a,b);
+        }
+        else          /// if y is not divisible by x
+            printf("0 0\n");
+    }
+
+    return 0;
+}

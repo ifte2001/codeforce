@@ -18,10 +18,10 @@ int main()
         for(int i=0;i<n;i++)
         {
             if(a[i]=='G' && b[i]=='B' || a[i]=='B' && b[i]=='G' || a[i]==b[i])  ///she will not understand blue and green... she will see those colors same...
-                flag=1;   ///if she can't not understand the differents between two colors... then ok (means: 1)
+                flag=1;   ///if she can't not understand the difference between two colors... then ok (means: 1)
             else
             {
-                flag=0;   ///if she can understand the differents between two colors... then not ok (means: 0)
+                flag=0;   ///if she can understand the difference between two colors... then not ok (means: 0)
                 break;
             }
         }

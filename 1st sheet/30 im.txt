@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int n,c,i,j;
+
+    scanf("%d",&c);
+
+    for(int k=0;k<c;k++)
+    {
+        char a[51];
+
+        scanf("%s",&a);
+        n = strlen(a);
+
+        int flag = 1;
+        for(i=0,j=n-1 ; i<n/2 ; i++,j--)
+        {
+            if(a[i]!=a[j])
+            {
+                flag = 0;
+                break;
+            }
+        }
+/*
+there are 2 conditions : 
+1) the string have to be palindrome
+2) If the string pass the first condition then ... If I swap some string's elements with their next elements... 
+then the previous string can not be same to the new string...
+*/
+        if(flag==0)
+            printf("NO\n");
+        else
+        {
+            for(i=0 ; i<n/2 ; i++)
+            {
+                if(a[0]!=a[i])  /// that is a trick for the second condition...
+                    flag=3;
+            }
+
+            if(flag==3)
+                printf("YES\n");
+            else
+                printf("NO\n");
+        }
+    }
+
+    return 0;
+}

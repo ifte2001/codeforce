@@ -84,9 +84,17 @@ s:
 s: 
 
 28.	6.899 https://codeforces.com/problemset/problem/1828/A
+s:
+
 29.	6.961 https://codeforces.com/problemset/problem/1674/A
+s: 
+
 30.	6.988 https://codeforces.com/problemset/problem/1832/A
+s:
+
 31.	7.001 https://codeforces.com/problemset/problem/1691/A
+s:
+
 32.	7.01 https://codeforces.com/problemset/problem/1833/A
 33.	7.057 https://codeforces.com/problemset/problem/1702/A
 34.	7.108 https://codeforces.com/problemset/problem/1743/A
