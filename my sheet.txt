@@ -96,6 +96,8 @@ s:
 s:
 
 32.	7.01 https://codeforces.com/problemset/problem/1833/A
+s: 
+
 33.	7.057 https://codeforces.com/problemset/problem/1702/A
 34.	7.108 https://codeforces.com/problemset/problem/1743/A
 35.	7.369 https://codeforces.com/problemset/problem/1650/A

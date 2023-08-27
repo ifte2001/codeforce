@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,c;
+
+    scanf("%d",&c);
+
+    for(int k=0;k<c;k++)
+    {
+       scanf("%d",&n);
+
+       char a[n+1];
+
+       a[n] = a[n+1] = '\0';
+
+       scanf("%s",&a);
+
+       int num = n-1; /// for double characters we have to decrease one from it ex: for "aaaaa" n=5 but for double character "aa" it will be 5-1=4...because there are 4 double characters...
+
+       for(int i=0;i<n-1;i++) /// this loop the for the double characters ... by which we will compare other double characters after it...
+       {
+           for(int j=i;j<n;j++) ///loop for search that... is there any double characters after it...
+           {
+               if(a[i]==a[j+1] && a[i+1]==a[j+2])  /// if this condition find any double same characters after it ... then it will subtitude 1 from n-1
+                {
+                    num--;
+                    break;
+                }
+
+           }
+       }
+       printf("%d\n",num);
+    }
+
+    return 0;
+}
+
+
