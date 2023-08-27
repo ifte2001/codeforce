@@ -45,60 +45,62 @@ s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/13%20im.txt
 s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/14%20im.txt
 
 15.	5.564 https://codeforces.com/problemset/problem/1791/C
-s:
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/15.txt
 
 16.	5.836 https://codeforces.com/problemset/problem/1669/A
-s: 
+s:  https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/16.txt
 
 17.	5.858 https://codeforces.com/problemset/problem/1768/A
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/17.txt
 
 18.	5.891 https://codeforces.com/problemset/problem/1790/A
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/18.txt
 
 19.	5.942 https://codeforces.com/problemset/problem/1748/A
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/19.txt
 
 20.	6.023 https://codeforces.com/problemset/problem/1831/A
 s: problem...
 
 21.	6.188 https://codeforces.com/problemset/problem/1760/C
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/21%20im.txt
 
 22.	6.246 https://codeforces.com/problemset/problem/1703/A
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/22.txt
 
 23.	6.564 https://codeforces.com/problemset/problem/1740/A
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/23%20im.txt
 
 24.	6.577 https://codeforces.com/problemset/problem/1743/B
 bojtasi na...
 
 25.	6.66 https://codeforces.com/problemset/problem/1792/A
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/25%20im.txt
 
 26.	6.706 https://codeforces.com/problemset/problem/1730/A
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/26%20im.txt
 
 27.	6.859 https://codeforces.com/problemset/problem/1722/B
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/27.txt
 
 28.	6.899 https://codeforces.com/problemset/problem/1828/A
-s:
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/28.txt
 
 29.	6.961 https://codeforces.com/problemset/problem/1674/A
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/29.txt
 
 30.	6.988 https://codeforces.com/problemset/problem/1832/A
-s:
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/30%20im.txt
 
 31.	7.001 https://codeforces.com/problemset/problem/1691/A
-s:
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/31%20im.txt
 
 32.	7.01 https://codeforces.com/problemset/problem/1833/A
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/32.txt
 
 33.	7.057 https://codeforces.com/problemset/problem/1702/A
+s: 
+
 34.	7.108 https://codeforces.com/problemset/problem/1743/A
 35.	7.369 https://codeforces.com/problemset/problem/1650/A
 36.	7.383 https://codeforces.com/problemset/problem/1731/A

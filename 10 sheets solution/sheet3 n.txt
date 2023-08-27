@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int a,b;
+
+    scanf("%d %d",&a,&b);
+    
+    int n = a+b+1;
+    char ch[n];
+    
+    scanf("%s",&ch);
+    getchar();
+    
+/*
+codition:
+1) the position of '-' this sign will be a+1
+2) without '-' it ... the others will be digits...(from 0 to 9) ... and it have to be (string index from 0 to a+b+1)
+*/
+    int flag = 0;
+    int num = 0;
+    for(int i=0;i<n;i++)
+    {
+      if(i==a)  /// this condition is to justify '-' sign position is a+1
+      {
+        if(ch[a]=='-') 
+           flag=1;
+        else
+           break;
+      }
+      else   /// this condition is for justify the digits positions...
+      {
+         int x = ch[i]-'0';
+         
+         if(x>=0 && x<=9)
+         {
+           num++;
+         }
+      }
+    }
+    if(flag==1 && num==a+b) /// if the 2nd line complete all the conditions then it will print yes otherwise it will print no...
+      printf("Yes\n");
+    else
+      printf("No\n");
+
+    
+    return 0;
+}

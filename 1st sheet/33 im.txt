@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int c,n;
+
+    scanf("%d",&c);
+
+    for(int k=0;k<c;k++)
+    {
+        scanf("%d",&n);
+
+        int s=0;
+        for(int i=1;i<=n;i*=10) /// the loop will continue untill the nearest or equal value of n... 
+        {
+            s = i;
+        }
+
+        int round = n - s;
+
+        printf("%d\n",round);
+    }
+
+    return 0;
+}
+

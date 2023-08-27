@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+
+    scanf("%d",&n);
+    int a[n];
+
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+
+    int flag=0;
+    int num=0;
+    while(1)
+    {
+        for(int i=0;i<n;i++)
+        {
+            if(a[i]%2==0) /// this condition is to verify that all the elements are even or odd... if they are even then the loop will continue... otherwise it will break the loop...
+            {
+                a[i] = a[i]/2; /// if all the elements of the array are even then we have to the half values of the elements...and continue the loop...
+            }
+            else
+            {
+                flag=3;
+                break;
+            }
+        }
+        if(flag==3)
+            break;
+        else   /// if all the elements of array are even then ... num will increase by one...
+            num++; 
+    }
+    printf("%d\n",num);
+
+    return 0;
+}
