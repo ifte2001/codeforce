@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+
+    scanf("%d",&n);
+
+    int a[n],b[n];
+
+    for(int k=0;k<n;k++) /// taking elements for a...
+    {
+        scanf("%d",&a[k]);
+    }
+    for(int k=0;k<n;k++)  /// taking elements for b...
+    {
+        scanf("%d",&b[k]);
+    }
+
+    int box1,box2;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=i;j<n;j++)
+        {
+            if(a[i]<a[j]) ///sorting array a
+            {
+                box1=a[i];
+                a[i]=a[j];
+                a[j]=box1;
+            }
+            if(b[i]<b[j])  ///sorting array b
+            {
+                box2=b[i];
+                b[i]=b[j];
+                b[j]=box2;
+            }
+        }
+    }
+
+    int flag=1;
+    for(int i=0;i<n;i++)  /// verifying a is the permutation of b ... or not...
+    {
+        if(a[i]==b[i])
+            continue;
+        else   /// if a[i]!=b[i] then ... a is not the permutation of b...
+        {
+            flag=0;
+            break;
+        }
+    }
+
+    if(flag==0)
+        printf("no\n");
+    else
+        printf("yes\n");
+
+    return 0;
+}
