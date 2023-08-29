@@ -102,8 +102,12 @@ s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/32.txt
 s: 
 
 34.	7.108 https://codeforces.com/problemset/problem/1743/A
+pore korbo...
+
 35.	7.369 https://codeforces.com/problemset/problem/1650/A
 36.	7.383 https://codeforces.com/problemset/problem/1731/A
+s:
+
 37.	7.554 https://codeforces.com/problemset/problem/1675/A
 38.	7.598 https://codeforces.com/problemset/problem/1747/A
 39.	7.656 https://codeforces.com/problemset/problem/1712/A
