@@ -105,10 +105,14 @@ s:
 pore korbo...
 
 35.	7.369 https://codeforces.com/problemset/problem/1650/A
+s:
+
 36.	7.383 https://codeforces.com/problemset/problem/1731/A
 s:
 
 37.	7.554 https://codeforces.com/problemset/problem/1675/A
+s:
+
 38.	7.598 https://codeforces.com/problemset/problem/1747/A
 39.	7.656 https://codeforces.com/problemset/problem/1712/A
 40.	8.18 https://codeforces.com/problemset/problem/1729/A

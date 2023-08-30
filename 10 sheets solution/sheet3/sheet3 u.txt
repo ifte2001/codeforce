@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+
+int main()
+{
+    int n,m;
+
+    scanf("%d %d",&n,&m);
+    
+    int a[n],b[m];
+    
+    for(int i=0;i<n;i++) /// take the input for first array
+    {
+      scanf("%d",&a[i]);
+    }
+    
+    for(int i=0;i<m;i++)  /// take the input for second array
+    {
+      scanf("%d",&b[i]);
+    }
+    
+    int j=0;
+    for(int i=0;i<n;i++)   /// compare the equality of second array with the first array...
+    {
+      if(a[i]==b[j])   /// 
+         j++;
+    }
+    
+/*
+If the elements of array "a" follow the condition then the "j" and "m" will be same ...
+otherwise it "j" will not equal "m"
+ex:
+
+case 1:
+input:
+2 5 3 1 6
+5 1 6
+then : j = m...
+
+case 2:
+2 5 3 1 6
+5 6 1
+then : j not equal m...
+
+    if(j==m)
+       printf("YES\n");
+    else
+       printf("NO\n");
+    
+    return 0;
+}

@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int c,cat,dog,cfood,dfood,afood;
+
+    scanf("%d",&c);
+
+    for(int k=0;k<c;k++)
+    {
+        scanf("%d %d %d %d %d",&dfood,&cfood,&afood,&dog,&cat);
+
+        cat = cfood-cat;  ///(1) verifying is the cat foods are enough for cat...
+        dog = dfood-dog;  ///(2) verifying is the dog foods are enough for dog...
+
+        if(cat<0) /// if cat value is negative... then we need afood...
+        {
+            afood = afood - abs(cat);
+
+            if(afood<0)   /// if afood is not enough for cat then print no... and start the loop again...
+            {
+                printf("NO\n");
+                continue;
+            }
+        }
+
+        if(dog<0) /// if dog value is negative... then we need afood...
+        {
+            afood = afood - abs(dog);
+
+            if(afood<0)   /// if afood is not enough for dog then print no... and start the loop again...
+            {
+                printf("NO\n");
+                continue;
+            }
+        }
+
+        printf("YES\n");  /// if afood is enough for the cats and dogs then 1st two condition will not work ... and we will print yes...
+    }
+
+    return 0;
+}

@@ -1,0 +1,75 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int c;
+
+    scanf("%d",&c);
+
+    for(int k=0;k<c;k++)
+    {
+      char a[100];
+      char ch;
+
+      scanf("%s",&a);
+      getchar();
+      scanf("%c",&ch);
+
+      int n=strlen(a);
+
+
+/*
+condition: 
+according to the problem we have to remove two digits beside the "ch" after removing two character from "a" string ... if at last we find "ch" from "a" string then the string is ok for the problem ... otherwise we have to print no...
+
+ex:
+"a" string >>> "contestes"
+"ch" charater is >>> "t"
+
+work for the first "t":
+===============
+if we remove two charaters before the first "t" such as, "co"
+then we have "ntet"
+now we can't remove "n" because it is not two characters...
+so first t is not right for our problem...
+
+work for the second "t":
+==================
+if we remove all the 2 characters before "t" such as,
+"co"
+"nt"
+"es"
+the we have "tes"
+if we remove all the 2 characters after "t" such as,
+"es"
+then we have only "t" which is equal to the (ch=' t ') 
+so this 2nd "t" is right for our problem ...
+
+my logic:
+======
+if the character position of the string is odd then we will print yes
+otherwise print no...
+*/
+
+      int flag=0;
+      for(int i=0;i<n;i++)
+      {
+          if(ch==a[i])
+          {
+              int pos = i+1;
+              if(pos%2!=0)
+              {
+                  flag=1;
+                  break;
+              }
+          }
+      }
+
+      if(flag==1)
+         printf("YES\n");
+      else
+         printf("NO\n");
+    }
+    return 0;
+}
