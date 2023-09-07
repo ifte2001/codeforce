@@ -1,0 +1,102 @@
+code:
+=====
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int c;
+
+    scanf("%d",&c);
+
+    for(int k=0;k<c;k++)
+    {
+      int n;
+
+      scanf("%d",&n);
+      int a[n];
+
+      for(int i=0;i<n;i++)
+      {
+        scanf("%d",&a[i]);
+      }
+
+      int pos=0,x;
+      int min = abs(a[0]);
+      for(int i=0;i<n;i++)
+      {
+        x = abs(a[i]);
+        if(min>x)
+        {
+          min = x;
+          pos = i;
+        }
+      }
+
+      int s2 = a[pos];
+      int s1 = 0;
+
+
+      for(int i=0;i<n;i++)
+      {
+        if(pos==i)
+            continue;
+        s1 = s1 + a[i];
+      }
+
+      int s;
+      s = abs(s1) - abs(s2);
+
+      printf("%d\n",s);
+    }
+    return 0;
+}
+
+
+output:
+=====
+WRONG_ANSWER
+Input
+
+4
+
+2
+
+10 -10
+
+4
+
+-2 -1 11 0
+
+3
+
+2 3 2
+
+5
+
+-9 2 0 0 -4
+
+Output
+
+0
+
+8
+
+3---------(note: {2+3} - {2} = 3 hoar kotha...
+
+11
+
+Answer
+
+0
+
+8
+
+7 --------------note: kinto ata arokom hocce keno? {2+3+2}-{ } = 7?
+
+11
+
+Checker Log
+
+wrong answer 3rd numbers differ - expected: '7', found: '3'
+

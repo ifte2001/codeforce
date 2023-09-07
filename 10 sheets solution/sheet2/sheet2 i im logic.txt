@@ -11,10 +11,9 @@ int main()
     {
       l = n%10;
       n = n/10;
-      sum = sum + l;
+      sum = sum*10 + l;
       if(n==0)
           break;
-      sum = sum * 10;
       
     }
     printf("%d\n",sum);

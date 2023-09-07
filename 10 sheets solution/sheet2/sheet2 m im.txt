@@ -15,11 +15,9 @@ int main()
         l = n%10;
         n = n/10;
 
-        if(l==4)
+        if(l==4 || l==7) ///if "l" digit of "n" is equal 7 or 4 ... then x=1
             x = 1;
-        else if(l==7)
-            x = 1;
-        else
+        else   ///if any digit of "n" is not equal 7 or 4 ... then x=3
         {
             x = 3;
             break;
@@ -29,16 +27,16 @@ int main()
             break;
       }
 
-      if(x==3)
+      if(x==3)  ///if any digit of "n" is not equal 7 or 4 ... then the number will not print...
         continue;
-      else
+      else      ///if all digits of "n" is equal 7 or 4 ... then "n" number will print...
       {
         printf("%d ",i);
         flag+=1;
       }
     }
 
-    if(flag==0)
+    if(flag==0)   /// if there is no number which all digits is equal 4 or 7... then the value of flag will not increase and print -1
         printf("-1\n");
 
     return 0;

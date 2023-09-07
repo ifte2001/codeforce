@@ -114,8 +114,15 @@ s:
 s:
 
 38.	7.598 https://codeforces.com/problemset/problem/1747/A
+wrong mone hocce:
+code:
+
 39.	7.656 https://codeforces.com/problemset/problem/1712/A
+s:
+
 40.	8.18 https://codeforces.com/problemset/problem/1729/A
+s:
+
 41.	8.324 https://codeforces.com/problemset/problem/1722/A
 42.	8.43 https://codeforces.com/problemset/problem/1728/A
 43.	8.433 https://codeforces.com/problemset/problem/1660/A
