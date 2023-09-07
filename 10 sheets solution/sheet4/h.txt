@@ -1,0 +1,43 @@
+    #include <stdio.h>
+    #include <string.h>
+     
+    int main()
+    {
+        int c;
+     
+        scanf("%d",&c);
+     
+        for(int k=0;k<c;k++)
+        {
+            char a[100000],b[100000];
+     
+            scanf("%s",&a);
+     
+            int n = strlen(a);
+     
+            int flag = 0;
+            for(int i=0;i<n-2;i++)
+            {
+                b[0]=a[i];
+                b[1]=a[i+1];
+                b[2]=a[i+2];
+     
+                int x1 = strcmp(b,"101");
+                int x2 = strcmp(b,"010");
+     
+                if(x1==0 || x2==0)
+                {
+                    flag=1;
+                    break;
+                }
+            }
+     
+     
+        if(flag == 0)
+            printf("Bad\n");
+        else if(flag == 1)
+            printf("Good\n");
+        }
+     
+        return 0;
+    }

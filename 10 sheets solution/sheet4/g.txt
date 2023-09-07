@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+ 
+int main()
+{
+   char a[100000];
+    
+   scanf("%s",&a);
+    
+   int n=strlen(a);
+       
+   for(int i=0;i<n;i++)
+   {
+     if(a[i]==',')
+        printf(" ");
+     else if(islower(a[i]))
+        printf("%c",toupper(a[i]));
+     else if(isupper(a[i]))
+        printf("%c",tolower(a[i]));
+   }
+    
+    return 0;
+}

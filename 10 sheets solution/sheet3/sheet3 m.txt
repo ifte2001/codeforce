@@ -1,0 +1,47 @@
+    #include <stdio.h>
+     
+    int main()
+    {
+      
+      int n,pos1,pos2,max,min;
+      
+      scanf("%d",&n);
+      
+      int a[n+1];
+      
+      for(int i=0;i<n;i++)
+      {
+        scanf("%d",&a[i]);
+      }
+      
+      max = a[0];
+      min = a[0];
+      
+      for(int i=0;i<n;i++)
+      {
+        if(max < a[i])
+        {
+          max = a[i];
+          pos1=i;
+        }
+      }
+      
+      for(int i=0;i<n;i++)
+      {
+         if(min > a[i])
+         {
+            min = a[i];
+            pos2=i;
+         }
+      }
+      a[pos1] = min;
+      a[pos2] = max;
+      
+      for(int i=0;i<n;i++)
+      {
+        printf("%d ",a[i]);
+      }
+      
+      
+      return 0;
+    }

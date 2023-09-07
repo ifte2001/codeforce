@@ -1,0 +1,33 @@
+    #include <stdio.h>
+    #include <string.h>
+     
+    int main()
+    {
+        char a[10000];
+     
+        printf("");
+        gets(a);
+     
+        int flag = 0;
+        int i = 0;
+        while(a[i]!='\0')
+        {
+            if(a[i]=='?')
+            {
+                flag = 1;
+                i++;
+                continue;
+            }
+     
+            if(flag==1)
+            {
+                if(a[i]=='&')
+                    printf("\n");
+                else if(a[i]=='=')
+                    printf(": ");
+                else
+                    printf("%c",a[i]);
+            }
+            i++;
+        }
+    }

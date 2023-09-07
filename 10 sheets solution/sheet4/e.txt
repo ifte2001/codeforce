@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+ 
+int main()
+{
+    int sum,x;
+    char a[1000000];
+    
+    scanf("%s",&a);
+    
+    int n=strlen(a);
+    
+    sum = 0;
+    for(int i=0;i<n;i++)
+    {
+      x = a[i] - '0';
+      sum = sum + x;
+    }
+    
+    printf("%d\n",sum);
+    
+    return 0;
+}

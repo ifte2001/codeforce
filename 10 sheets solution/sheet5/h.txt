@@ -1,0 +1,22 @@
+    #include <stdio.h>
+    #include <string.h>
+     
+    int main()
+    {
+        int c,n;
+        char ch;
+     
+        scanf("%d",&c);
+     
+        for(int k=0;k<c;k++)
+        {
+            scanf("%d %c",&n,&ch);
+     
+            for(int i=0;i<n;i++)
+                printf("%c ",ch);
+     
+            printf("\n");
+        }
+     
+        return 0;
+    }

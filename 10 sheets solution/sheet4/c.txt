@@ -1,0 +1,47 @@
+    #include <stdio.h>
+    #include <string.h>
+     
+    int main()
+    {
+        char a[20],b[20];
+     
+        scanf("%s",a);
+        getchar();
+        scanf("%s",b);
+     
+        int len1=strlen(a);
+        int len2=strlen(b);
+     
+        int n = len1<len2 ? len1:len2;
+     
+        int flag = 0;
+        for(int i=0;i<n;i++)
+        {
+          int x1=a[i];
+          int x2=b[i];
+     
+          if(x1<x2)
+          {
+            printf("%s\n",a);
+            flag = 1;
+            break;
+          }
+          else if(x1>x2)
+          {
+            printf("%s\n",b);
+            flag = 1;
+            break;
+          }
+        }
+     
+        if(flag == 0)
+        {
+            if(len1>len2)
+                printf("%s\n",b);
+            else if(len1<len2)
+                printf("%s\n",a);
+            else
+                printf("%s\n",b);
+        }
+        return 0;
+    }
