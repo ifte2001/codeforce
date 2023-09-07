@@ -99,29 +99,29 @@ s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/31%20im.txt
 s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/32.txt
 
 33.	7.057 https://codeforces.com/problemset/problem/1702/A
-s: 
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/33%20im.txt
 
 34.	7.108 https://codeforces.com/problemset/problem/1743/A
 pore korbo...
 
 35.	7.369 https://codeforces.com/problemset/problem/1650/A
-s:
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/35%20im.txt
 
 36.	7.383 https://codeforces.com/problemset/problem/1731/A
-s:
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/36.txt
 
 37.	7.554 https://codeforces.com/problemset/problem/1675/A
-s:
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/37%20im.txt
 
 38.	7.598 https://codeforces.com/problemset/problem/1747/A
 wrong mone hocce:
-code:
+code: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/38.txt
 
 39.	7.656 https://codeforces.com/problemset/problem/1712/A
-s:
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/39%20im.txt
 
 40.	8.18 https://codeforces.com/problemset/problem/1729/A
-s:
+s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/40.txt
 
 41.	8.324 https://codeforces.com/problemset/problem/1722/A
 42.	8.43 https://codeforces.com/problemset/problem/1728/A
