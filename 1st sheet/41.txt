@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char a[10]="Timur";
+
+    int c,n,flag;
+
+    scanf("%d",&c);   ///test case number
+
+    for(int k=0;k<c;k++)   /// loop for c time test cases
+    {
+      scanf("%d",&n);
+
+      char b[n];
+
+      scanf("%s",&b);
+
+      if(n!=5)   /// if user string lenght is not equal 5 then print no and start from the beginning...
+      {
+          printf("NO\n");
+          continue;
+      }
+
+/*
+condition :
+if user string have T,i,m,u,r and user string length is 5 then print yes...
+*/
+
+      flag=0;   
+      for(int i=0;i<5;i++)   ///Timur string
+      {
+        for(int j=0;j<5;j++)   /// user string
+        {
+          if(a[i]==b[j])   /// if Timur and user string character is equal then flag value will increase and break the user string loop... 
+          {
+            flag++;
+            break;
+          }
+        }
+      }
+
+      if(flag == n)  /// if Timur and user string length is equal then print yes... otherwise print no....
+         printf("YES\n");
+      else   
+         printf("NO\n");
+
+    }
+
+    return 0;
+}

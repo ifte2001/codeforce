@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char a[1000010],b[1000010];  /// string a = it is for full string... string b = it is for reverse word...
+
+    printf("");
+    gets(a);
+
+    int i=0;  ///i is for a string
+    while(a[i]!='\0')  /// this loop is for work in string first to last...
+    {
+
+        int j=0;  ///j is for b string
+        while(1)  ///this loop is for take word to reverse....
+        {
+            b[j] = a[i];
+            i++; 
+            j++;
+            if(a[i]==' ' || a[i]=='\0')  ///this loop will continue untill a[i] is a space or a null character...
+                break;
+        }
+        i++; ///we have to increase this i for space because the previous while loop will not count space...
+
+        strrev(b);  ///reverse the word ... which we get from previous while loop...
+
+        if(a[i]=='\0')  ///at the end of the string we will print reverse "b" without space... without it the other word have space after them...
+            printf("%s",b);
+        else   
+            printf("%s ",b);
+
+
+        for(int k=0;k<=j;k++)  /// remove all the character of 'b" to take new word in it...
+        {
+            b[k] = '\0';
+        }
+    }
+
+    return 0;
+}
