@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,x; 
+/*
+n = array size
+x = shifting time...
+*/
+
+    scanf("%d %d",&n,&x);  
+
+    int a[n],b[n];
+/*
+a array is for user
+b array where we will shift right the elements of array
+*/
+
+    for(int i=0;i<n;i++)  ///for input from user for the 'a' array
+    {
+        scanf("%d",&a[i]);
+    }
+
+    int j;
+    j = x%n;         /// logic: if we shift right the elements of 'a' then the first elements of 'a' array will be at x%n index...
+    for(int i=0;i<n;i++)
+    {
+        if(j!=n)       /// we will store a[i] in b[j] where 'j' will start from x%n...
+        {
+            b[j] = a[i];
+        }
+        else if(j==n)   /// if 'j' is equal 'n' then we will start the value of 'j' from zero again...
+        {
+            j=0;
+            b[j] = a[i];
+        }
+        j++;   ///increase the value of j by one...
+    }
+
+    for(int i=0;i<n;i++)
+        printf("%d ",b[i]);  /// print b array
+
+    return 0;
+}

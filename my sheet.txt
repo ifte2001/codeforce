@@ -127,8 +127,14 @@ s: https://github.com/ifte2001/codeforce/blob/master/1st%20sheet/40.txt
 s:
 
 42.	8.43 https://codeforces.com/problemset/problem/1728/A
+s:
+
 43.	8.433 https://codeforces.com/problemset/problem/1660/A
+s:
+
 44.	8.502 https://codeforces.com/problemset/problem/1669/C
+s:
+
 45.	8.51 https://codeforces.com/problemset/problem/1778/A
 46.	8.567 https://codeforces.com/problemset/problem/1777/A
 47.	8.682 https://codeforces.com/problemset/problem/1788/A

@@ -1,0 +1,88 @@
+#include <stdio.h>
+
+int main()
+{
+
+/*
+logic:
+we have to see that all the even index elements in an array ... all are even or all are odd...ex:
+even index elements are odd...[1,1,5,3,3,4]
+even index elements are even...[2,1,4,1,6,4]
+we have to see that all the odd index elements in an array ... all are even or all are odd...ex:
+odd index elements are odd...[2,1,6,3,3,5]
+odd index elements are even...[1,4,4,2,6,4]
+
+(if they fill the condition then we will print yes otherwise no...
+
+*/
+    int c;
+    
+    scanf("%d",&c);
+    
+    for(int k=0;k<c;k++)
+    {
+      int n;
+      int x1=0;
+      int x2=0;
+      
+      scanf("%d",&n);
+      
+      int a[n];
+    
+      for(int i=0;i<n;i++)
+      {
+        scanf("%d",&a[i]);
+      }
+      
+      int flag=0;
+      for(int i=0;i<n;i+=2) /// for even index elements...
+      {
+        if(a[0]%2==0)  /// for even 
+           flag=1;
+        
+        if(flag==1)
+        {
+          if(a[i]%2==0)
+             x1++;
+          else
+             break;
+        }
+        else    /// for odd
+        {
+          if(a[i]%2!=0)
+             x1++;
+          else
+             break;
+        }
+      }
+      
+      flag=0;
+      for(int i=1;i<n;i+=2) /// for odd index elements...
+      {
+        if(a[1]%2==0)  ///for even...
+           flag=1;
+        
+        if(flag==1)  
+        {
+          if(a[i]%2==0)
+             x2++;
+          else
+             break;
+        }
+        else  ///for odd...
+        {
+          if(a[i]%2!=0)
+             x2++;
+          else
+             break;
+        }
+      }
+    
+      if((x1+x2)==n)  ///if the array follow my logic condition then it will be true...
+         printf("YES\n");
+      else
+         printf("NO\n");
+    }
+    
+    return 0;
+}

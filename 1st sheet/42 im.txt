@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main()
+{ 
+/*
+logic:
+there are many balls in a bag... i have to take two ball randomly until there is only one ball in bag...
+there many colours of ball... we have to say at last which colour ball will be stay in bag...
+the answer will be the maximum number of ball with same color will stay in bag at last...
+so we have to find out which color of balls were maximum in the bag...
+*/
+   int c;
+   
+   scanf("%d",&c);
+   
+   for(int k=0;k<c;k++)
+   {
+     int n,pos;
+   
+     scanf("%d",&n);
+   
+     int a[n];
+   
+     for(int i=0;i<n;i++) ///take input 
+     {
+       scanf("%d",&a[i]);
+     }
+     
+     int max = a[0];
+     
+     for(int i=0;i<n;i++)  
+     {
+       if(max <= a[i])
+       {
+         max = a[i];
+         pos = i+1;
+       }
+     }
+   
+     printf("%d\n",pos);
+   }
+    
+   return 0;
+}

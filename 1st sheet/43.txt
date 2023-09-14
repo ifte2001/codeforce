@@ -1,0 +1,37 @@
+    #include <stdio.h>
+     
+    int main()
+    { 
+    /*
+    logic:
+    For example, if a=1 and b=1 (he has one 1-burle coin and one 2 burle coin), then:
+
+    n=1... he can pay 1 burle without change, paying with one 1 burle coin,
+    n=2... he can pay 2 burle without change, paying with one 2 burle coin,
+    n=3... he can pay 3 burle without change by paying with one 1-burle coin and one 2 burle coin,
+    n=4... he cannot pay 4 burle without change (moreover, he cannot pay this amount at all). 
+
+    so we have to find out the number of 'n'...
+    so the logic is...
+    the number of n will be (total money + 1)...
+    
+
+*/
+       int c,a,b,s;
+       
+       scanf("%d",&c);
+       
+       for(int k=0;k<c;k++)
+       {
+         scanf("%d %d",&a,&b);
+         
+         if(a==0)
+           s=1;
+         else
+           s = a + (b*2) + 1;
+         
+         printf("%d\n",s);
+       }
+        
+       return 0;
+    }

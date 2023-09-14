@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main()
+{ 
+   
+   int n,box;
+   
+   scanf("%d",&n);
+   
+   int a[n];
+   
+   for(int i=0;i<n;i++) ///take input 
+   {
+     scanf("%d",&a[i]);
+   }
+   
+   for(int i=0;i<n;i++)  
+   {
+     if(a[i]==0)  ///search zero...if it get zero then this loop will work
+     {
+       for(int j=i+1;j<n;j++)
+       {
+         if(a[j]!=0)  ///then it will search is there any number after the zero which is not xero....if we find any number which is not zero...then we sawp it with the zero...
+         {
+           box = a[i];
+           a[i] = a[j];
+           a[j] = box;
+           
+           break;
+         }
+       }
+     }
+   }
+   
+   for(int i=0;i<n;i++)  ///print what i had done...
+   {
+     printf("%d ",a[i]);
+   }
+    
+    return 0;
+}
