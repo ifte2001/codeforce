@@ -136,6 +136,8 @@ s:
 s:
 
 45.	8.51 https://codeforces.com/problemset/problem/1778/A
+s:
+
 46.	8.567 https://codeforces.com/problemset/problem/1777/A
 47.	8.682 https://codeforces.com/problemset/problem/1788/A
 48.	8.748 https://codeforces.com/problemset/problem/1811/A

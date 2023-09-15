@@ -1,0 +1,64 @@
+#include<stdio.h>
+
+int main()
+{
+
+/*
+logic:
+*** condition: we must swap their sign one time...
+there will be 3 sitution 
+sitution 1: two number will be like >>> -1 -1   ... if we swap their sign >>> 1  1
+sitution 2: two number will be like >>> 1 1    ... if we swap their sign >>>  -1  -1
+sitution 3: two number will be like >>> 1 -1  or -1 1   ... if we swap their sign >>>  -1 1  or 1  -1
+for first sitution >>> we have to subtitude 4 with the total sum of the array...
+for second sitution >>> we have to add 4 with the total sum of the array...
+for third sitution >>> we need not do anything because if we swap their sign the change will be zero...
+
+we have do that three things in loop 
+becase we have to see which sum will be maximum according the question
+*/
+    int c;
+
+    scanf("%d",&c);
+
+    for(int k=0;k<c;k++)
+    {
+        int n;
+        int result = 0;
+        scanf("%d",&n);
+
+        int a[n];
+        
+        int sum = 0;
+        for(int i=0;i<n;i++)
+        {
+            scanf("%d",&a[i]);
+            sum = sum + a[i];
+        }
+
+        int max_sum = -n;
+        int sitution = 0;
+        for(int i=0;i<n-1;i++)
+        {
+            int s = sum;
+            if(a[i]<0 && a[i+1]<0)
+            {
+                s = s + 4;
+            }
+            else if(a[i]>0 && a[i+1]>0)
+            {
+                s = s - 4;
+            }
+            else
+            {
+                s = s;
+            }
+
+            if(max_sum < s)
+                max_sum = s;
+        }
+
+        printf("%d\n",max_sum);
+    }
+    return 0;
+}
