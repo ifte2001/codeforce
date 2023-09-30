@@ -1,0 +1,46 @@
+#include<stdio.h>
+
+int main()
+{
+
+/*
+logic:
+if two adjacent elements are odd or even... then we will consider them as same pair...
+otherwise they are different pair...
+in this problem we have to make all adjacent elements different pair... by multiply the adjacent of same pair...
+my logic is:
+we have see how many adjacent elements are there which are same pair...
+*/
+
+    int c;
+
+    scanf("%d",&c);
+
+    for(int k=0;k<c;k++)
+    {
+        int n;
+        scanf("%d",&n);
+
+        int a[n];
+
+        for(int i=0;i<n;i++)
+            scanf("%d",&a[i]);
+
+        int x = 0;
+        for(int i=0;i<n-1;i++)
+        {
+            if(a[i]%2==0 && a[i+1]%2==0)   ///adjacent element >>> even checking...
+            {
+                x++;
+            }
+            else if(a[i]%2!=0 && a[i+1]%2!=0)   ///adjacent element >>> odd checking...
+            {
+                x++;
+            }
+        }
+
+        printf("%d\n",x);
+    }
+
+    return 0;
+}

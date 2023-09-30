@@ -1,0 +1,65 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+/*
+we have to make all the color same... condition in one move we can make two color same
+ex:
+we have color : a  b  c  d
+move1 : we will make ab to aa  (then all color : a  a  c  d)
+move2 : we will make ac to aa  (then all color : a  a  a  d)
+move2 : we will make ad to aa  (then all color : a  a  a  a)
+total move is 3
+
+so my logic first we will sort the color string
+then we see how many different color are there... if there are "n" different color then total move will be
+n-1...
+*/
+
+  char ch[10],ch1[10];
+
+  int c;
+  char box;
+
+  scanf("%d",&c);
+
+  for(int k=0;k<c;k++)
+  {
+    int n=0;
+
+    scanf("%s",&ch);
+    scanf("%s",&ch1);
+
+    strcat(ch,ch1);
+
+    for(int i=0 ; i<4 ; i++)
+    {
+      for(int j=i+1 ; j<4 ; j++)
+      {
+        int n1 = ch[j];
+        int n2 = ch[i];
+
+        if(n1<n2)
+        {
+          box = ch[i];
+          ch[i] = ch[j];
+          ch[j] = box;
+        }
+      }
+    }
+
+    char check=ch[0];
+    for(int i=0 ; i<4 ; i++)
+    {
+      if(ch[i]!=check)
+      {
+        n++;
+
+        check = ch[i];
+      }
+    }
+    printf("%d\n",n);
+  }
+  return 0;
+}

@@ -139,16 +139,38 @@ s:
 s:
 
 46.	8.567 https://codeforces.com/problemset/problem/1777/A
+s:
+
 47.	8.682 https://codeforces.com/problemset/problem/1788/A
+s:
+
 48.	8.748 https://codeforces.com/problemset/problem/1811/A
+s:
+
 49.	8.764 https://codeforces.com/problemset/problem/1750/A
+s:
+
 50.	8.94 https://codeforces.com/problemset/problem/1721/A
+s:
+
 51.	9.117 https://codeforces.com/problemset/problem/1744/A
+s:
+
 52.	9.261 https://codeforces.com/problemset/problem/1709/A
+s:
+
 53.	9.343 https://codeforces.com/problemset/problem/1674/B
+s:
+
 54.	9.364 https://codeforces.com/problemset/problem/1774/A
+s:
+
 55.	9.696 https://codeforces.com/problemset/problem/1759/A
+s:
+
 56.	9.791 https://codeforces.com/problemset/problem/1703/C
+s: 
+
 57.	9.802 https://codeforces.com/problemset/problem/1719/A
 58.	9.985 https://codeforces.com/problemset/problem/1734/A
 59.	10.161 https://codeforces.com/problemset/problem/1711/A

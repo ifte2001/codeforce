@@ -1,0 +1,97 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+
+/*
+logic:
+we have to check all elements of array and all character of string are same or not....
+such as,
+
+1) 
+we will say yes if
+the array is  1   2    1    3     5
+the string is  a   b    a    d     a
+here every number have there own character
+such as,
+1 have a
+2 have b
+3 have d
+4 have a
+
+2)
+we will say yes if
+the array is   1   2   2    4
+the string is   a   a   a    a
+here every number have there own character
+such as,
+1 have a
+2 have a
+4 have a
+
+3)
+we will say no if
+the array is   1   2   2    1
+the string is   a   a   a    b
+here every number have there own character
+such as,
+1 have a and b ------(here 1 should only have one character... but there are two so we have to say no for it)
+2 have a
+*/
+
+  int c;
+
+  scanf("%d",&c);
+
+  for(int k=0 ; k<c ; k++)
+  {
+    int n=0;
+
+    scanf("%d",&n);
+
+    char ch[n];
+    int a[n];
+
+    for(int i=0 ; i<n ; i++)
+    {
+      scanf("%d",&a[i]);
+    }
+    scanf("%s",&ch);
+
+    int flag = 0;
+    for(int i=0 ; i<n ; i++)
+    {
+      char check_ch = ch[i];
+      for(int j=i+1 ; j<n ; j++)
+      {
+        if(strlen(ch) != n)
+        {
+            flag=1;
+            goto out;
+        }
+        else if(a[i]==0)
+          continue;
+        else if(a[i]==a[j])
+        {
+          if(check_ch == ch[j])
+          {
+            a[j]=0;
+          }
+          else
+          {
+            flag=1;
+            goto out;
+          }
+        }
+      }
+    }
+
+    out:
+    if(flag==1)
+      printf("NO\n");
+    else
+      printf("YES\n");
+  }
+  return 0;
+}

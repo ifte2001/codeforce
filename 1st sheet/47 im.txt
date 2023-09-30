@@ -1,0 +1,67 @@
+#include<stdio.h>
+
+int main()
+{
+/*
+logic:
+====
+in this program we have to find out k... it is a position from where 
+a1 * a2 * .... * a(k) ==  a(k+1) * a(k+2) * a(k+3).....
+from here we have to find out the position of a(k)
+there condition : all elements will be one or two...
+
+there are three sitution:
+s1 :
+there are odd numbers of 2... like :   1  2  1   1
+in this sitution we will print -1
+
+s2 :
+all elements will be 1... like :    1  1  1  1
+in this sitution we will print  1
+
+s3 :
+there are even numbers of 2 ... like :   1   2    1    1    2 
+*/
+
+    int c;
+    int n;
+
+    scanf("%d",&c);
+
+    for(int k=0;k<c;k++)
+    {
+        scanf("%d",&n);
+
+        int a[n];
+        int count=0;
+        for(int i=0;i<n;i++)
+        {
+            scanf("%d",&a[i]);
+
+            if(a[i] == 2)
+                count++;
+        }
+
+
+        if(count%2==1)
+            printf("-1\n");
+        else if(count==0)
+            printf("1\n");
+        else if(count%2==0)
+        {
+            int num = count/2;
+            for(int j=0;j<n;j++)
+            {
+                if(a[j]==2)
+                    num--;
+
+                if(num==0)
+                {
+                    printf("%d\n",j+1);
+                    break;
+                }
+            }
+        }
+    }
+    return 0;
+}
