@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<limits.h>
+
+int main()
+{
+  int c;
+
+  scanf("%d",&c);
+
+  for(int k=0;k<c;k++)
+  {
+    int n;
+
+    scanf("%d",&n);
+
+    int a[n];
+    int b[n];
+
+    for(int i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    int box;
+    for(int i=0;i<n;i++)
+    {
+      for(int j=i+1;j<n;j++)
+      {
+        if(a[i]>a[j])
+        {
+          box = a[j];
+          a[j] = a[i];
+          a[i] = box;
+        }
+      }
+    }
+
+    int result;
+    int min = INT_MAX;
+    for(int i=0;i<n-2;i++)
+    {
+        result = (a[i+1]-a[i])+(a[i+2]-a[i+1]);
+
+        if(min > result)
+        {
+            min = result;
+        }
+    }
+    printf("%d\n",min);
+  }
+
+  return 0;
+}

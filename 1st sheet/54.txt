@@ -1,0 +1,82 @@
+    #include<stdio.h>
+    int main()
+    {
+        int c;
+     
+        scanf("%d",&c);
+        for(int k=0;k<c;k++)
+        {
+            int n;
+            scanf("%d",&n);
+     
+            char ch[n+2];
+     
+            scanf("%s",&ch);
+            int sum = 0;
+            int i=0;
+            while(ch[i]!='\0')
+            {
+                sum = sum + (ch[i]-'0');
+                i++;
+            }
+     
+     
+            int index=0;
+            i=0;
+            while(ch[i]!='\0')
+            {
+                if(sum%2==0)
+                {
+                    if(i==0 && ch[i]=='1')
+                    {
+                        index++;
+                    }
+                    else if(i==0 && ch[i]=='0')
+                    {
+     
+                    }
+                    else if(ch[i]=='1' && index < sum/2)
+                    {
+                        printf("+");
+                        index++;
+                    }
+                    else if(ch[i]=='1' && index >=(sum/2))
+                    {
+                        printf("-");
+                    }
+                    else if(ch[i]=='0')
+                    {
+                        printf("+");
+                    }
+                }
+                else if(sum%2!=0)
+                {
+                    if(i==0 && ch[i]=='1')
+                    {
+                        index++;
+                    }
+                    else if(i==0 && ch[0]=='0')
+                    {
+     
+                    }
+                    else if(ch[i]=='1' && index<(sum/2)+1)
+                    {
+                        printf("+");
+                        index++;
+                    }
+                    else if(ch[i]=='1' && index>=sum/2)
+                    {
+                        printf("-");
+                    }
+                    else if(ch[i]=='0')
+                    {
+                        printf("+");
+                    }
+                }
+                i++;
+            }
+            printf("\n");
+        }
+        return 0;
+     
+    }

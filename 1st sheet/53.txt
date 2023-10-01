@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+int main()
+{
+  
+  
+  int c;
+  
+  scanf("%d",&c);
+  
+  for(int k=0;k<c;k++)
+  {
+    char ch[10];
+    
+    scanf("%s",&ch);
+    
+    int ascii1=ch[0];
+    int ascii2=ch[1];
+    
+    int n1 = (ascii1-97) * 25;
+    int n2 = ascii2-96;
+    
+    int index;
+    
+    if(ascii1 < ascii2)
+      index = (n1 + n2) - 1;
+    else
+      index = n1 + n2;
+    
+    
+    printf("%d\n",index);
+  }
+  return 0;
+}

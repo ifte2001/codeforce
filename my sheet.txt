@@ -172,7 +172,11 @@ s:
 s: 
 
 57.	9.802 https://codeforces.com/problemset/problem/1719/A
+s:
+
 58.	9.985 https://codeforces.com/problemset/problem/1734/A
+s:
+
 59.	10.161 https://codeforces.com/problemset/problem/1711/A
 60.	10.183 https://codeforces.com/problemset/problem/1749/A
 61.	10.262 https://codeforces.com/problemset/problem/1684/A

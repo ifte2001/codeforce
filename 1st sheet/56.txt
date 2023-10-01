@@ -1,0 +1,51 @@
+    #include<stdio.h>
+    #include<string.h>
+     
+    int main()
+    {
+      int c;
+     
+      scanf("%d",&c);
+     
+      for(int k=0;k<c;k++)
+      {
+          int digit;
+          scanf("%d",&digit);
+          int a[digit];
+          for(int i=0;i<digit;i++)
+          {
+              scanf("%d",&a[i]);
+          }
+     
+          for(int t=0;t<digit;t++)
+          {
+            int n;
+            char move[1000];
+            scanf("%d %s",&n,&move);
+            getchar();
+     
+            for(int i=n-1; i>=0 ; i--)
+            {
+                    if(move[i]=='D')
+                {
+                    a[t]++;
+                    if(a[t]==10)
+                        a[t]=0;
+                }
+                if(move[i]=='U')
+                {
+                    a[t]--;
+                    if(a[t]==-1)
+                        a[t]=9;
+                }
+            }
+        }
+        for(int i=0;i<digit;i++)
+        {
+            printf("%d ",a[i]);
+        }
+        printf("\n");
+      }
+     
+      return 0;
+    }

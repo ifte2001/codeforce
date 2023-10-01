@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+  int c;
+  
+  scanf("%d",&c);
+  
+  for(int k=0;k<c;k++)
+  {
+    long long int n,m;
+    scanf("%lld %lld",&n,&m);
+    
+    long long int x = n+m;
+    
+    if(x%2==0)
+      printf("Tonya\n");
+    if(x%2!=0)
+      printf("Burenka\n");
+  }
+  
+  return 0;
+}
